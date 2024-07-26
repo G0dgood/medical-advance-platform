@@ -110,11 +110,17 @@ font-size: 12px;
   align-items: center;
 }
 
+.FaPlus-name-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px;  */
+}
+
 .FaPlus-name{
   width: 40px;
   height: 40px;
-  background-color:#EBDDCA;
-  padding: 10px;
+  background-color:#EBDDCA; 
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -127,7 +133,7 @@ font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .notification{
@@ -297,10 +303,7 @@ border-radius: 10px;
    /* border-bottom: 2px solid #EDEDED; */
    padding-bottom: 0.6rem;
 }
-
-.header-pageTitle{
-  font-weight: bold;
-}
+ 
 
 
 .header_Search_container {
@@ -371,11 +374,7 @@ border-radius: 10px;
 .TeamsPerformanceUL li {
   width:100%;
 }
-.header-pageTitle {
  
-  display: none;
-
-}
 .CreateTask{
   width: 320px;
   /* height: 440px; */

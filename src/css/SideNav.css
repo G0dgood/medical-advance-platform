@@ -3,27 +3,15 @@
   --lft-padding: 2rem !important;
   position: relative !important;
   grid-area: sidenav !important;
-  background: #F9F9F9 !important;
+  background: #fff !important;
   border-right: 1px solid #EDEDED;
   /* z-index: 99 !important;   */
   display: block;
   margin: 24px 24px;
 }
-#side-nav .logo-area {
-  height: 60px;
-  /* border-bottom: 1px solid rgba(0, 0, 0, .05); */
-  /* padding-left: 10px ; */
-  display: flex;
-  align-items: center;
-}
+ 
 
-#side-nav .logo-area h2 {
-  color: var(--accent-blue);
-  font-weight: normal;
-  user-select: none;
-  font-size:x-large;
-  font-weight: bold;
-}
+ 
 
  
 
@@ -95,7 +83,7 @@
 }
 
 #side-nav nav .nav-link.active {
-  background-color: #94A3B8;  
+  background-color: #F0F6FE;  
 }
 
 
@@ -114,9 +102,9 @@
   color: var(--accent-blue) !important;
 }
 
-#side-nav nav a.active {
+/* #side-nav nav a.active {
   border-right: 2px solid var(--accent-blue) !important;
-}
+} */
 
 #side-nav nav a.active svg,
 #side-nav nav a.active span {

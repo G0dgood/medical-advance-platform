@@ -18,9 +18,10 @@
 :root {
     --clr-white: #fff; ;
   --gradient-yellow: #EBDDCA;
-  --accent-purple-light:#ff66667a;
-  --accent-purple: #990000;
-  --dark-blue: #334D6E;
+  --accent-purple-light:#0d6dfd7f;
+  --accent-purple: #0D6EFD;
+  --accent-blue: #0D6EFD;
+  --dark-blue: #0D6EFD;
   --fade-purple: #F9F9F9;
   --hover-background: #ededed;
   --text: #5C5F62;
@@ -149,6 +150,7 @@ tbody tr {
 @import url(./css/bootstrap.css);   
 @import url(./css/Page.css);   
 @import url(./css/Boards.css);   
+ 
  
  
  

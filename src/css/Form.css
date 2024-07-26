@@ -288,3 +288,24 @@ font-weight: 700;
 	border:1px solid  #0D6EFD;
   box-shadow: 0 0 5px  #7047eb7e;  
 }
+
+
+.formik-errors{
+    color: red !important;
+    font-size: .7rem !important;
+    font-style: italic !important;  
+}
+
+
+.table-msg {
+  color: #cacaca !important;
+  width: 100%; 
+  flex-direction: column;
+  justify-content: center;
+   text-align: center !important;  
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important; 
+}
+.table-msg p {
+  color: #7a7a7a; 
+}

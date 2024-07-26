@@ -1,5 +1,5 @@
-  // export const baseUrl: any = "https://isn.outcess.com"; 
-    export const baseUrl: any = "http://localhost:3000"; 
+export const apiBaseUrl = 'https://goodd.free.beeceptor.com';
+// export const apiBaseUrl = 'https://beeceptor.com/crud-api';
 
 
 export const buildDynamicURL = (id: any, fromDate: any, endDate: any, limit: any, page: any, base: any) => {

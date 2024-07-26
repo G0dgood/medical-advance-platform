@@ -40,6 +40,48 @@
 				align-items: center;
 }
 
+.dashboard-first-card-btn-container{
+	display: flex;  
+	align-items: center;
+	margin-top: 3rem;
+}
+#dashboard-first-card-btn1{ 
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+   border-bottom: 3px solid #0D6EFD !important;    
+  border: none;
+  border-radius: 0px !important;
+  font-size: 14px !important;
+  background: none !important;
+  color: #0D6EFD;
+  outline: none; 
+  cursor: pointer;
+  font-weight: bold !important;
+  white-space: nowrap; 
+}
+#dashboard-first-card-btn2{ 
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+   border: none !important;    
+  border: none;
+  border-radius: 0px !important;
+  font-size: 14px !important;
+  background: none !important;
+  color: #98A2B3;
+  outline: none; 
+  cursor: pointer;
+  font-weight: bold !important;
+  white-space: nowrap; 
+}
+
+
+.dashboard-first-card-container{
+	display: flex;
+ flex-direction: column;
+	gap: 2rem;
+}
 .tasks-board-items-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;

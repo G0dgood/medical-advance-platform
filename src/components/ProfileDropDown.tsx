@@ -1,25 +1,15 @@
 import { BiHelpCircle } from "react-icons/bi";
-import { MdLogout } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 import { SVGLoader } from "./SVGLoader";
-import { useAppDispatch, useAppSelector } from "../store/useStore";
+import { MdLogout } from "react-icons/md";
+
 
 const ProfileDropDown = () => {
-	const dispatch = useAppDispatch()
-	const navigate = useNavigate();
-
-
-
-
-	const handleLogout = () => {
-		navigate("/login");
-	}
 
 
 
 	return (
 		<div className='notification-profile'>
-			<div className='notification-card' onClick={() => navigate("/setting")}>
+			<div className='notification-card'  >
 				<div className='notification-icon-profile'>
 					{"G"}
 				</div>
@@ -27,7 +17,7 @@ const ProfileDropDown = () => {
 					<p className='notification-text-profile'>My profile</p>
 				</div>
 			</div>
-			<div className='notification-card' onClick={() => navigate("/support")}>
+			<div className='notification-card'  >
 				<div className='notification-icon-profile-sup'>
 					<BiHelpCircle size={25} />
 				</div>
@@ -36,7 +26,7 @@ const ProfileDropDown = () => {
 				</div>
 			</div>
 
-			<div className='notification-card' onClick={handleLogout}>
+			<div className='notification-card'  >
 				<div className='notification-icon-profile-sup'>
 					<MdLogout size={25} />
 				</div>

@@ -1,8 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import { BiHome } from "react-icons/bi";
-import { LuUsers } from "react-icons/lu";
-import { HiOutlineCalendar, HiOutlineRectangleStack } from "react-icons/hi2";
-import { FiUserPlus } from "react-icons/fi";
+import { PiUserLight } from "react-icons/pi";
+import { PiLock } from "react-icons/pi";
+import { PiBellSimple } from "react-icons/pi";
+import { PiMoney } from "react-icons/pi";
+import { PiTag } from "react-icons/pi";
+import { CgCloud } from "react-icons/cg";
+import { PiUsers } from "react-icons/pi";
+
+
 
 const SideNav = () => {
 
@@ -10,35 +15,32 @@ const SideNav = () => {
 
   return (
     <div id="side-nav">
-      {/* <div className="logo-area">
-        <SiGoogleadsense size={35} className="logo-area-img" />
-        <h2>Superleads</h2>
-      </div> */}
+
       <nav>
 
-        <NavLink to="/admindashboard" className={({ isActive }) =>
+        <NavLink to="#" className={({ isActive }) =>
           [
             "nav-link",
-            isActive ? "active" : null,
+            isActive ? "actives" : null,
           ]
             .filter(Boolean)
             .join(" ")
         }>
-          <BiHome size={25} />
+          <PiUserLight size={25} />
           <span>Account</span>
         </NavLink>
 
 
 
-        <NavLink to="/employeedashboard" className={({ isActive }) =>
+        <NavLink to="#" className={({ isActive }) =>
           [
             "nav-link",
-            isActive ? "active" : null,
+            isActive ? "actives" : null,
           ]
             .filter(Boolean)
             .join(" ")
         }>
-          <BiHome size={25} />
+          <PiLock size={25} />
           <span>Security</span>
         </NavLink>
 
@@ -46,44 +48,44 @@ const SideNav = () => {
 
 
 
-        <NavLink to="/teams" className={({ isActive }) =>
+        <NavLink to="#" className={({ isActive }) =>
           [
             "nav-link",
-            isActive ? "active" : null,
+            isActive ? "actives" : null,
           ]
             .filter(Boolean)
             .join(" ")
         }  >
-          <LuUsers size={25} />
+          <PiBellSimple size={25} />
           <span>Notifications</span>
         </NavLink>
 
-        <NavLink to="/boards" className={({ isActive }) =>
+        <NavLink to="#" className={({ isActive }) =>
           [
             "nav-link",
-            isActive ? "active" : null,
+            isActive ? "actives" : null,
           ]
             .filter(Boolean)
             .join(" ")
         }  >
-          <HiOutlineRectangleStack size={25} />
+          <PiMoney size={25} />
           <span>Pricing</span>
         </NavLink>
 
-        <NavLink to="/employeeboards" className={({ isActive }) =>
+        <NavLink to="" className={({ isActive }) =>
           [
             "nav-link",
-            isActive ? "active" : null,
+            isActive ? "actives" : null,
           ]
             .filter(Boolean)
             .join(" ")
         }  >
-          <HiOutlineRectangleStack size={25} />
+          <PiTag size={25} />
           <span>Sales</span>
         </NavLink>
 
 
-        <NavLink to="/register" className={({ isActive }) =>
+        <NavLink to="/" className={({ isActive }) =>
           [
             "nav-link",
             isActive ? "active" : null,
@@ -91,19 +93,19 @@ const SideNav = () => {
             .filter(Boolean)
             .join(" ")
         }  >
-          <FiUserPlus size={25} />
+          <PiUsers size={25} />
           <span>Users & Roles</span>
         </NavLink>
 
-        <NavLink to="/timeline" className={({ isActive }) =>
+        <NavLink to="#" className={({ isActive }) =>
           [
             "nav-link",
-            isActive ? "active" : null,
+            isActive ? "actives" : null,
           ]
             .filter(Boolean)
             .join(" ")
         }  >
-          <HiOutlineCalendar size={25} />
+          <CgCloud size={25} />
           <span>Backups</span>
         </NavLink>
 

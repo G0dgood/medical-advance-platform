@@ -30,15 +30,27 @@ display: flex;
 justify-content: space-between;
 }
 
-.dashboard-first-card-h{
-	margin-bottom: 5px;
-	/* font-size: 14px;
-	color: var(--small-text); */
+.dashboard-first-card-h{ 
+font-style: normal;
+font-weight: 500;
+font-size: 14px; 
+color: #98A2B3; 
 }
-.dashboard-first-card-p{
-	margin-bottom: 5px;
-	font-size: 14px;
-	color: var(--text);
+.dashboard-first-card-h5{  
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%; 
+color: #1D2739;
+ margin-bottom: 5px;
+
+}
+.dashboard-first-card-p{ 
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 145%; 
+color: #98A2B3;  
 }
 
 .dashboard-first-card-icon{
