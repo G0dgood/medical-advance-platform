@@ -82,19 +82,21 @@ font-size: 12px;
   border: 0px !important;
   background: none !important;
 }
-
-.header_Search_container{  
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 10px;
+.header_Search_one{
+  width: 20rem; 
+  border: 0px !important;
+  background: none !important; 
+  height: 30px !important; 
+  outline: none !important;
+  box-shadow: none !important;
 }
+
+ 
 
 .FaPlus-icon{
   width: 40px;
   height: 40px;
   background-color:#EDEDED;
-  /* padding: 10px; */
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -113,8 +115,7 @@ font-size: 12px;
 .FaPlus-name-container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* gap: 10px;  */
+  align-items: center; 
 }
 
 .FaPlus-name{
@@ -136,87 +137,9 @@ font-size: 12px;
   gap: 30px;
 }
 
-.notification{
-  width: 450px;
-  height: 485px;
-  border: 1px solid #EDEDED;
-  padding: 1.2rem ;
-  background-color: #fff;
-  position: absolute;
-  z-index: 9999;
-  top: 2.5rem;
-  right: 6.5rem;
-  border-radius: 10px;
-  overflow: auto;
- display: flex;
- flex-direction: column;
- gap: 1.5rem;
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.notification-profile{
-  width: 280px;
-  /* height: 285px; */
-  border: 1px solid #EDEDED;
-  padding: 1.2rem ;
-  background-color: #fff;
-  position: absolute;
-  z-index: 9999;
-  top: 2.5rem;
-  right: 2.8rem;
-  border-radius: 10px;
-  overflow: auto;
- display: flex;
- flex-direction: column;
- /* gap: 1rem; */
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.notification-noti-flex{
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.notification-now{
-  color: #6a6d70;
-}
-
-.notification-now-text{
-  font-size: 16px;
-}
-
-.notification-text-side{
-color: #8969ee;
-}
-
-.notification-buttom-down{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: .8rem;
-  border-radius: 10px;
-  background-color: #ededed;
-  color: #696c6f;
-  font-weight: bold;
-  border: 1px solid #ededed;
-}
-.notification-buttom-down:hover{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: .8rem;
-  border-radius: 10px;
-  background-color: #ededed;
-  color: var(--accent-purple);
-  font-weight: bold;
-  border: 1px solid var(--accent-purple);
-}
-
+ 
 .CreateTask{
-  width: 320px;
-  /* height: 440px; */
+  width: 320px; 
   border: 1px solid #EDEDED;
   padding: 1.2rem ;
   background-color: #fff;
@@ -232,87 +155,50 @@ color: #8969ee;
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.notification-icon{
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: #ffcccc;
-  color: #990000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.notification-icon-profile{
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: #EBDDCA;
-  color: #767675;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-.notification-icon-profile-sup{
-  width: 50px;
-  height: 50px;
-  border-radius: 50px; 
-  color: #767675;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-
-.notification-card{
-  display: flex;
-  align-items: center;
-  gap: 10px;  
-  padding: 5px 15px;
-}
-.notification-card:active{
-  display: flex;
-  align-items: center;
-  gap: 10px;  
-  padding: 5px 15px;
-  background-color: #ededed;
-  border-radius: 10px;
-}
-.notification-card:hover{ 
-background-color: #ededed;
-padding: 5px 15px;
-border-radius: 10px;
-}
-.notification-card-profile{
-  display: flex;
-  align-items: center;
-  gap: 10px;  
-}
-.notification-text{
-  color: #66696c;
-  font-size: 16px; 
-}
-.notification-text-profile{
-  color: #0c0e0f;
-  font-size: 16px; 
-}
-
-.notification-header-text{
-  font-weight:bold;
-  font-size: 20px;
-   /* border-bottom: 2px solid #EDEDED; */
-   padding-bottom: 0.6rem;
-}
  
 
-
 .header_Search_container {
-  position: relative;
+   position: relative;
    border: 1px solid  #F0F2F5;
    background-color: #F0F2F5;
    padding: 0px 10px;
+   display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
 }
 
+.header_Search_container_one {
+   position: relative;
+   border: 2px solid  #F0F2F5 !important;
+   background-color: #fff;
+   padding: 0px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   border-radius: 10px; 
+   height: 36px;
+}
+
+ .md-filter-seach{  
+display: flex; 
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 5px;  
+height: 36px; 
+background: #FFFFFF; 
+border: 1px solid #CBD5E1;
+border-radius: 8px;  
+color: #334155 !important;
+}
+.md-filter-seach:hover {  
+  padding: 8px 12px !important;
+background: #334155 !important;   
+color: #fff !important;
+}
+
+  
 .header_Search { 
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -376,8 +262,7 @@ border-radius: 10px;
 }
  
 .CreateTask{
-  width: 320px;
-  /* height: 440px; */
+  width: 320px; 
   border: 1px solid #EDEDED;
   padding: 1.2rem ;
   background-color: #fff;

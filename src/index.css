@@ -1,5 +1,4 @@
- 
- *,
+*,
 *::before,
 *::after {
   padding: 0;
@@ -30,7 +29,7 @@
   --black: #000000;
   --green: #34C988;
   --orange: #FF6F32;
- --yellow: #9e9e00;
+  --yellow: #9e9e00;
   --white:#ffffff;
   --form-border:#E2E2E2;
   --background:#F0F2F5; 
@@ -42,14 +41,13 @@
 
 body { 
   background:  var(--background);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   line-height: 1.3;
   padding-left: 0px !important;
 }
 
 img, 
-svg {
-  /* display: block !important; */
+svg { 
   max-width: 100% !important;
 }
 
@@ -98,7 +96,20 @@ table {
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #EDEDED !important;
+  border: 1px solid #EDEDED !important;
+}
+
+.faangleup-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.faangleup-upanddown{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: 25px;
 }
  
  
@@ -114,6 +125,7 @@ table th {
   font-weight: 500;
   white-space: nowrap !important;
   font-weight: bold;
+    padding: 0px 1rem;
 }
 tbody tr {
   border-top: 1px solid #f0f0f0;
@@ -126,6 +138,8 @@ tbody tr {
   padding: 2rem 1rem !important;
   overflow-y: scroll!important;
   }
+
+
 #page-wrapper {
     display: grid !important;
     position: absolute; 

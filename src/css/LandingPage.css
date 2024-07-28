@@ -253,4 +253,14 @@
   height: 100vh;
 }
 
+  #bg-blue {
+  background-color: #F0F6FE !important; 
+  color: #0D6EFD !important; 
+  padding: 2px 12px !important;
+  border-radius: 12px !important;
+}
+
+.sort-up{
+  cursor: pointer !important;
+}
  

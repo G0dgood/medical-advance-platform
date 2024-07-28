@@ -13,6 +13,7 @@ const createUser = async (input: any) => {
 // Read Users
 const getUsers = async () => {
 	const { data }: any = await axios.get(`${apiBaseUrl}/users`);
+	console.log("{{{{{{}}}}}}}", data)
 	return data;
 };
 

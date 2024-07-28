@@ -86,7 +86,7 @@ const Header = () => {
         <span className='FaPlus-bell' onMouseEnter={() => setNotification(true)} onMouseLeave={() => setNotification(false)}>
           <div className='bell-notification-container'>
             <AiTwotoneSetting size={20} color='#0D6EFD' />
-            <div className='bell-notification'>Settings</div>
+            <div className='bell-notification' style={{ color: "#0D6EFD" }}>Settings</div>
           </div>
 
 
