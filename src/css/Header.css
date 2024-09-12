@@ -9,10 +9,9 @@
 }
 
 .header-icon-container-flex{
-  display: flex;
-  gap: 1rem; 
-  align-items: center;
-  width: 100%;
+  display: flex; 
+  align-items: center; 
+  gap: 1rem;
 }
 
 .bell-notification-container{ 
@@ -78,9 +77,11 @@ font-size: 12px;
 
 
 .header_Search{
-  width: 35rem; 
+  width: 400px; 
   border: 0px !important;
-  background: none !important;
+  background: none !important;  
+background: var(--white);
+border-radius: 16px 0px 0px 16px; 
 }
 .header_Search_one{
   width: 20rem; 
@@ -134,26 +135,11 @@ font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 16px;
 }
 
  
-.CreateTask{
-  width: 320px; 
-  border: 1px solid #EDEDED;
-  padding: 1.2rem ;
-  background-color: #fff;
-  position: absolute;
-  z-index: 9999;
-  top: 2.5rem;
-  right: 10rem;
-  border-radius: 10px;
-  overflow: auto;
- display: flex;
- flex-direction: column;
- gap: 1.8rem;
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+ 
 
  
 
@@ -166,6 +152,7 @@ font-size: 12px;
     justify-content: center;
     align-items: center; 
     border-radius: 10px;
+    margin-left: 1rem;
 }
 
 .header_Search_container_one {
@@ -236,10 +223,23 @@ color: #fff !important;
 }
 
 .focused{
-    border: 1px solid var(--accent-purple);
+    border: 1px solid var(--accent-blue);
     z-index: 999;
 }
-@media screen and (max-width:1200px) {
+@media (max-width: 768px) {
+  .equipments_request_container_h4 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100% !important;
+}
+  .header_Search{
+  width: 100% !important; 
+  border: 0px !important;
+  background: none !important;  
+background: var(--white);
+border-radius: 16px 0px 0px 16px; 
+}
   #header {
   grid-area: header;
   background: #fff;
@@ -253,46 +253,8 @@ color: #fff !important;
     padding-block-start: 20px;
     padding-block-end: 20px;
 }
-.header_Search {
- width: 100%;
-}
-
-.TeamsPerformanceUL li {
-  width:100%;
-}
  
-.CreateTask{
-  width: 320px; 
-  border: 1px solid #EDEDED;
-  padding: 1.2rem ;
-  background-color: #fff;
-  position: absolute;
-  z-index: 9999;
-  top:4rem;
-  right: 3rem;
-  border-radius: 10px;
-  overflow: auto;
- display: flex;
- flex-direction: column;
- gap: 1.8rem;
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 }
 
-.close-span-header{
-   display: flex;
-   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.close-span-xheader{
-  width: 64px;
-  height: 64px;
-  border: 1px solid #0D6EFD;
-  background-color: #D2E4FE;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ 
+ 

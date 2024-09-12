@@ -15,15 +15,14 @@
 
 
 :root {
-    --clr-white: #fff; ;
+    --clr-white: #F0F2F5; ;
   --gradient-yellow: #EBDDCA;
-  --accent-purple-light:#0d6dfd7f;
-  --accent-purple: #0D6EFD;
-  --accent-blue: #0D6EFD;
-  --dark-blue: #0D6EFD;
+  --accent-blue-light:#E3EAFB; 
+  --accent-blue: #175CFF;
+  --dark-blue: #175CFF;
   --fade-purple: #F9F9F9;
   --hover-background: #ededed;
-  --text: #5C5F62;
+  --text: #344054;
   --small-text: #ABACAE;
   --small-static: #EDEDED;
   --black: #000000;
@@ -32,7 +31,7 @@
   --yellow: #9e9e00;
   --white:#ffffff;
   --form-border:#E2E2E2;
-  --background:#F0F2F5; 
+  --background:#fff; 
 }
  
  html, body { 
@@ -79,25 +78,30 @@ a {
   position: relative;
   height: 100dvh !important;
   grid-template-columns: max-content 1fr !important;
-  grid-template-rows: 100px 1fr !important;
+  grid-template-rows: 70px 1fr !important;
   grid-template-areas:
-    "header header"
+    "sidenav header"
     "sidenav main" 
     "sidenav footer";   
 }
 
 main {
   grid-area: main !important;
-  padding: 1rem 3rem !important;
+  padding: 2rem !important;
   overflow-y: scroll!important; 
 }
-table {
-  background-color: #fff;
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #EDEDED !important;
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  
+  main {
+  grid-area: main !important;
+  padding: 1rem !important;
+  overflow-y: scroll!important; 
 }
+}
+
+ 
 
 .faangleup-container{
   display: flex;
@@ -132,45 +136,20 @@ tbody tr {
 }
  
 
-@media (max-width: 1200px) {
-  main {
-  grid-area: main !important;
-  padding: 2rem 1rem !important;
-  overflow-y: scroll!important;
-  }
-
-
-#page-wrapper {
-    display: grid !important;
-    position: absolute; 
-    grid-template-columns: max-content 1fr !important;
-    grid-template-rows: 100%;
-    grid-template-areas:
-        "header header"
-        "sidenav main"
-        "sidenav footer";
-    width: 100%; 
-} 
- }  
+ 
 
   
- /* --- Other CSS Files --- */
-@import url(./App.css);   
+ /* --- Other CSS Files --- */  
 @import url(./css/Header.css);  
-@import url(./css/SideNav.css);  
-@import url(./css/table.css); 
-@import url(./css/Form.css);   
-@import url(./css/Modal.css); 
-@import url(./css/bootstrap.css);   
-@import url(./css/Page.css);   
-@import url(./css/Boards.css);   
+@import url(./css/SideNav.css);   
+@import url(./css/Form.css);  
+@import url(./css/bootstrap.css);         
+@import url(./css/LandingPage.css);   
  
  
  
  
  
- 
-
  
 .cp-text1 {
     color: hsla(210, 100%, 65%, 0.944);
@@ -183,8 +162,7 @@ tbody tr {
 }
 
   .logo-buttom-padding{
-    padding-left: 2px;
-    /* width: 140px; */
+    padding-left: 2px; 
     height: 20px;
   }
 
@@ -199,9 +177,8 @@ tbody tr {
  
   }
 
-  .logo-buttom-padding{
-    padding-top: 1rem;
-       /* width: 150px; */
+  .logo-buttom-padding {
+    padding-top: 1rem; 
     height: 40px;
   }
 }
@@ -212,8 +189,7 @@ tbody tr {
   }
 
   .logo-buttom-padding{
-    padding-top: 1rem;
-       /* width: 150px; */
+    padding-top: 1rem; 
     height: 40px;
   }
 }
@@ -222,9 +198,212 @@ tbody tr {
   display: flex;
   justify-content: center;
   align-items: center;
- height: 80vh;
-   /* Media query for smaller screens */
+ height: 80vh; 
+
   @media (max-width: 600px) {
-    height: 60vh; /* Adjust this value for smaller screens */
+    height: 60vh; 
   }
+}
+
+/* Container to align label and checkbox */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--dark-blue);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Add custom checkmark style */
+.custom-checkbox input[type="checkbox"]:checked::before {
+  content: '✔';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: var(--white);
+}
+
+/* Change background when checked */
+.custom-checkbox input[type="checkbox"]:checked {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+/* Label styling */
+.custom-checkbox label {
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.actives_dan_Calendar_flex .actives_dan_Calendar{ 
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 145%;  
+letter-spacing: -0.005em;  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 8px;  
+width: 30px;
+height: 17px; 
+background-color: var(--accent-blue);
+border-radius: 10px;  
+color: var(--white ) !important; 
+}
+
+
+.nav_dropdown_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav_dropdown_container_sub{
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+}
+.nav_dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px 10px 30px;
+}
+
+
+/* General button styles */
+button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  height: 55px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 145%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Reject{ 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px; 
+width: 93px;
+height: 36px; 
+background: #D42620;
+border-radius: 8px;  
+ 
+
+}
+
+.Reject p {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 145%; 
+display: flex;
+align-items: center;
+text-align: center; 
+color: #FFFFFF;  
+}
+
+.Respond{    
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 10px; 
+width: 90px;
+height: 36px; 
+background: var(--accent-blue);
+border-radius: 8px; 
+
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 145%; 
+display: flex;
+align-items: center;
+text-align: center; 
+color: var(--white);  
+}
+
+.Respond_container{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+
+.Respond_container{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+  width: 100%; 
+  gap: 1rem;
+}
+.Respond_container_sup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+}
+ 
+.Respond_container_sup h6{ 
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%; 
+letter-spacing: -0.02em; 
+
+}
+
+.Respond_container_sup p{  
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 145%;  
+color: #667185;  
+}
+
+.Respond_flex{
+  display: flex;
+  align-items: center;  
+  gap: 12px;
+}
+
+.popup__container{
+  padding: 32px;
 }
